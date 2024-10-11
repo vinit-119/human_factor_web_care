@@ -1,0 +1,294 @@
+/* General Page Styling */
+
+/* Patient Profile Section */
+.patient-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    margin-right: 30px;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    max-width: 400px;
+}
+
+.profile-details h2 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 150px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #4CAF50;
+}
+
+.patient-dashboard {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Titles */
+h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Weekly Summary Section */
+.weekly-summary .summary-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekly-summary .summary-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 23%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weekly-summary .summary-item h3 {
+    color: #4CAF50;
+}
+
+/* Record Activity Section */
+.record-activity {
+    margin-top: 30px;
+}
+
+.record-activity .form-group {
+    margin-bottom: 15px;
+}
+
+.record-activity .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.record-activity input, .record-activity select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Goals and Affirmations Section */
+.goals-affirmations {
+    margin-top: 30px;
+}
+
+/* Filter Options */
+.filter-options {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-options label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-options select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart-container h3 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+/* Record List Styling */
+.record-list .record-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.record-list .record-item h3 {
+    color: #4CAF50;
+}
+
+.record-list .record-item p {
+    margin-bottom: 10px;
+}
+
+.toggle-details {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-details:hover {
+    background-color: #3e8e41;
+}
+
+/* Hidden Journal Details */
+.journal-details {
+    margin-top: 15px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.journal-details p {
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Make slider work on all screen sizes */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 0 0 80%;
+    }
+}
+
+.motivational-footer {
+    background-color: #2E7D32;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.815);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left h4,
+.footer-right p {
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.footer-middle blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    border-left: 5px solid #4CAF50;
+    padding-left: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-middle blockquote {
+        margin-top: 20px;
+        padding-left: 0;
+        border-left: none;
+    }
+}
