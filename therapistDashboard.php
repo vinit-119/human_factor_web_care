@@ -30,17 +30,7 @@ if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
 }
 
-// Fetch appointments booked by patients for the logged-in therapist
-$appointmentsQuery = "SELECT patients.first_name AS patient_name, appointments.appointment_date, appointments.appointment_time, appointments.status 
-                      FROM appointments 
-                      JOIN patients ON appointments.patient_id = patients.user_id 
-                      WHERE therapist_id = ? 
-                      ORDER BY appointments.appointment_date";
-$stmt = $conn->prepare($appointmentsQuery);
-$stmt->bind_param('i', $user_id);
-$stmt->execute();
-$appointmentsResult = $stmt->get_result();
-$stmt->close();
+
 
 $conn->close();
 ?>

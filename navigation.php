@@ -59,7 +59,7 @@ $role = $isLoggedIn ? $_SESSION['role'] : null;
             <?php elseif ($role == 'therapist'): ?>
                 <a href="therapistDashboard.php">Dashboard</a>
                 <a href="patientSummary.php">Patient Summary</a>
-                <a href="groupSessions.php">Group Sessions</a>
+                <a href="therapistgroupsession.php">Group Sessions</a>
             <?php elseif ($role == 'admin'): ?>
                 <a href="adminDashboard.php">Dashboard</a>
                 <a href="manageUsers.php">Manage Users</a>
